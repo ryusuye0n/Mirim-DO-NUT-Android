@@ -15,81 +15,67 @@ val Pretendard = FontFamily(
 )
 
 object AppType {
-    val display = TextStyle(
-        fontFamily = Pretendard,
+    private val base = TextStyle(fontFamily = Pretendard)
+    
+    val display = base.copy(
         fontWeight = FontWeight.Black,
         fontSize = 40.sp
     )
-
-    val title1 = TextStyle(
-        fontFamily = Pretendard,
+    val title1 = base.copy(
         fontWeight = FontWeight.Black,
         fontSize = 24.sp
     )
-    val title2 = TextStyle(
-        fontFamily = Pretendard,
+    val title2 = base.copy(
         fontWeight = FontWeight.Bold,
         fontSize = 24.sp
     )
-    val title3 = TextStyle(
-        fontFamily = Pretendard,
+    val title3 = base.copy(
         fontWeight = FontWeight.SemiBold,
         fontSize = 24.sp
     )
-    val title4 = TextStyle(
-        fontFamily = Pretendard,
+    val title4 = base.copy(
         fontWeight = FontWeight.SemiBold,
         fontSize = 20.sp
     )
-    val title5 = TextStyle(
-        fontFamily = Pretendard,
+    val title5 = base.copy(
         fontWeight = FontWeight.Normal,
         fontSize = 20.sp
     )
 
-    val text1 = TextStyle(
-        fontFamily = Pretendard,
+    val text1 = base.copy(
         fontWeight = FontWeight.Bold,
         fontSize = 16.sp
     )
-    val text2 = TextStyle(
-        fontFamily = Pretendard,
+    val text2 = base.copy(
         fontWeight = FontWeight.SemiBold,
         fontSize = 16.sp
     )
-    val text3 = TextStyle(
-        fontFamily = Pretendard,
+    val text3 = base.copy(
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp
     )
-    val text4 = TextStyle(
-        fontFamily = Pretendard,
+    val text4 = base.copy(
         fontWeight = FontWeight.Normal,
         fontSize = 15.sp
     )
-    val text5 = TextStyle(
-        fontFamily = Pretendard,
+    val text5 = base.copy(
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp
     )
 
-    val caption1 = TextStyle(
-        fontFamily = Pretendard,
+    val caption1 = base.copy(
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp
     )
-    val caption2 = TextStyle(
-        fontFamily = Pretendard,
+    val caption2 = base.copy(
         fontWeight = FontWeight.SemiBold,
         fontSize = 10.sp
     )
-    val caption3 = TextStyle(
-        fontFamily = Pretendard,
+    val caption3 = base.copy(
         fontWeight = FontWeight.Normal,
         fontSize = 10.sp
     )
-    val caption4 = TextStyle(
-        fontFamily = Pretendard,
+    val caption4 = base.copy(
         fontWeight = FontWeight.SemiBold,
         fontSize = 8.sp
     )
