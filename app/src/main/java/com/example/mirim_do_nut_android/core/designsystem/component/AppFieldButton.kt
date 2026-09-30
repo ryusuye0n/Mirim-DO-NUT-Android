@@ -26,7 +26,7 @@ fun AppTextField(
         value = value,
         onValueChange = onValueChange,
         placeholder = { Text(hintString, style = AppType.text5, color = AppColor.gray450) },
-        textStyle = AppType.text5.copy(color = AppColor.gray450),
+        textStyle = AppType.text5.copy(color = AppColor.black),
         singleLine = true,
         colors = TextFieldDefaults.colors(
             focusedContainerColor = Color.Transparent,

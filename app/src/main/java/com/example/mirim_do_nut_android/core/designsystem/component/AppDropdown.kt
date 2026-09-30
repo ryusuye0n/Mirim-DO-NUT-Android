@@ -52,7 +52,10 @@ fun AppDropDown(
                 },
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Text(selectedText ?: hintString, style = AppType.text5.copy(color = AppColor.gray450))
+            Text(
+                selectedText ?: hintString,
+                style = AppType.text5.copy(color = if (selectedText != null) AppColor.black else AppColor.gray450)
+            )
             Icon(imageVector = Icons.Default.KeyboardArrowDown, contentDescription = null)
         }
         DropdownMenu(
