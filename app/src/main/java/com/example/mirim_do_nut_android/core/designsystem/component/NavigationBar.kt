@@ -39,7 +39,7 @@ fun AppNavigationBar(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.clickable {
-                isSelected("HOME")
+                isSelected("home")
             }) {
             Icon(painter = painterResource(id = R.drawable.home), contentDescription = null)
             Text("HOME", style = AppType.caption3)
@@ -47,7 +47,7 @@ fun AppNavigationBar(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.clickable {
-                isSelected("PROFILE")
+                isSelected("profile")
             }) {
             Icon(painter = painterResource(id = R.drawable.person), contentDescription = null)
             Text("PROFILE", style = AppType.caption3)
@@ -55,7 +55,7 @@ fun AppNavigationBar(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.clickable {
-                isSelected("MAP")
+                isSelected("map")
             }) {
             Icon(painter = painterResource(id = R.drawable.map), contentDescription = null)
             Text("MAP", style = AppType.caption3)
@@ -63,7 +63,7 @@ fun AppNavigationBar(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.clickable {
-                isSelected("CHAT")
+                isSelected("chat")
             }) {
             Icon(painter = painterResource(id = R.drawable.chat), contentDescription = null)
             Text("CHAT", style = AppType.caption3)
