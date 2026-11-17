@@ -20,10 +20,11 @@ import androidx.compose.ui.unit.dp
 import com.example.mirim_do_nut_android.R
 import com.example.mirim_do_nut_android.core.designsystem.theme.AppColor
 import com.example.mirim_do_nut_android.core.designsystem.theme.AppType
+import com.example.mirim_do_nut_android.navigation.Routes
 
 @Composable
 fun AppNavigationBar(
-    isSelected: (String) -> Unit,
+    onNavigate: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Row(
@@ -39,7 +40,7 @@ fun AppNavigationBar(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.clickable {
-                isSelected("home")
+                onNavigate(Routes.HOME)
             }) {
             Icon(painter = painterResource(id = R.drawable.home), contentDescription = null)
             Text("HOME", style = AppType.caption3)
@@ -47,7 +48,7 @@ fun AppNavigationBar(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.clickable {
-                isSelected("profile")
+                onNavigate(Routes.PROFILE)
             }) {
             Icon(painter = painterResource(id = R.drawable.person), contentDescription = null)
             Text("PROFILE", style = AppType.caption3)
@@ -55,7 +56,7 @@ fun AppNavigationBar(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.clickable {
-                isSelected("map")
+                onNavigate(Routes.MAP)
             }) {
             Icon(painter = painterResource(id = R.drawable.map), contentDescription = null)
             Text("MAP", style = AppType.caption3)
@@ -63,7 +64,7 @@ fun AppNavigationBar(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.clickable {
-                isSelected("chat")
+                onNavigate(Routes.CHAT)
             }) {
             Icon(painter = painterResource(id = R.drawable.chat), contentDescription = null)
             Text("CHAT", style = AppType.caption3)

@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
 
             Scaffold(
                 bottomBar = {
-                    AppNavigationBar(isSelected = { route -> navController.navigate(route) {
+                    AppNavigationBar(onNavigate = { route -> navController.navigate(route) {
                         popUpTo(navController.graph.findStartDestination().id) {
                             saveState = true
                         }

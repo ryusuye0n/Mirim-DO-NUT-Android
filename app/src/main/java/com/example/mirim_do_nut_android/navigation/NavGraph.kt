@@ -12,11 +12,11 @@ import com.example.mirim_do_nut_android.feature.profile.ProfileScreen
 
 @Composable
 fun NavGraph(navController: NavHostController, modifier: Modifier = Modifier) {
-    NavHost(navController = navController, startDestination = "home", modifier = modifier) {
-        composable ("home") { HomeScreen() }
-        composable ("profile") { ProfileScreen() }
-        composable("map") { MapScreen() }
-        composable("chat") { ChatScreen() }
+    NavHost(navController = navController, startDestination = Routes.HOME, modifier = modifier) {
+        composable(Routes.HOME) { HomeScreen() }
+        composable(Routes.PROFILE) { ProfileScreen() }
+        composable(Routes.MAP) { MapScreen() }
+        composable(Routes.CHAT) { ChatScreen() }
 
     }
 }
